@@ -6,12 +6,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useMediaQuery } from 'react-responsive';
 import Search from './search.js';
 import Info from './info.js';
+import Aapp from './access.js';
 
 export default function App() {
   const api = createApi({
     // Don't forget to set your access token here!
     // See https://unsplash.com/developers
-    accessKey: 'Gp1TQzzESgpp0foLXvwR5s55hrLkfai9o8-PJGTYrIE',
+    accessKey: Aapp,
   });
   const [ss, setSS] = useState(window.innerWidth);
   const [data, setData] = useState(null);
@@ -152,7 +153,7 @@ export default function App() {
           RandomWallpaper.io
         </h2>
         <h2
-          className="bg-light position-absolute top-0 end-0 px-1 hvr-underline-from-center"
+          className="bg-light position-absolute top-0 end-0 p-1 hvr-underline-from-center"
           style={{
             opacity: '0.4',
           }}
